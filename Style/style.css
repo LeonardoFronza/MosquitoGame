@@ -1,0 +1,62 @@
+html {
+    cursor: url(../image/mata_mosquito.png) 30 30, auto;
+}
+body {
+    background-image: url(../image/bg.jpg);
+    background-size: cover;  /* Faz com que a Imagem ocupe a tela inteira*/
+    background-repeat: no-repeat;
+}
+
+.mosquitinho {
+    width: 50px;
+    height: 50px;
+}
+
+.mosquitoMedio {
+    width: 70px;
+    height: 70px;
+}
+
+.mosquitoGrande {
+    width: 90px;
+    height: 90px;
+}
+
+.ladoA {
+    transform: scaleX(1); /* Scale(1) é  lado Orginal da Imagem (Olhando para esquerda)*/
+}
+
+.ladoB {
+    transform: scaleX(-1); /* Scale(-1) é  lado contrario, olhando para a direita */
+}
+
+/* Painel de Vida + Tempo */
+
+.painel {
+    position: absolute;
+    width: 100px;
+    padding: 10px;
+    left: 10;
+    bottom: 10px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.vida {
+    float: left;
+    
+}
+
+.time {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    clear: both;
+    
+}
+
+.btn-left {
+    margin-left: 25px;
+}

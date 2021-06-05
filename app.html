@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mata Mosquito</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="Style/style.css">
+    
+    <script src="jogo.js"></script>
+</head>
+<body onresize="ajustaTelaNavegador()">
+    
+    <div class="painel">
+        <div class="vida">
+            <img src="image/coracao_cheio.png" id="vida1">
+            <img src="image/coracao_cheio.png" id="vida2">
+            <img src="image/coracao_cheio.png" id="vida3">
+        </div>
+
+        <div class="time">
+            <i class="fas fa-stopwatch"></i>: <span id="cronometro"></span>
+        </div>
+
+    </div>
+
+
+    <script>
+        document.getElementById('cronometro').innerHTML = tempo
+
+        var criaMosquito = setInterval(function(){
+            posicaoRandom()
+        },criaMosquitoTempo)
+
+        
+        
+    </script>
+
+</body>
+</html>
